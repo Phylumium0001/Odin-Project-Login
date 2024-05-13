@@ -13,7 +13,7 @@
 
     --background-100: hsl(240, 6%, 90%);
     --background-200: hsl(240, 6%, 80%);
-    --background-300: hsl(240, 5%, 70%);
+    
     --background-500: hsl(240, 5%, 50%);
 
     --primary-50: hsl(240, 20%, 95%);
@@ -47,7 +47,6 @@ body{
 
 .image{
     width:40%;
-    /* background-color: var(--background-500); */
 }
 .image img{
     width:100%;
@@ -59,13 +58,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(173, 33%, 80%);
+    background-color: hsl(173, 57%, 70%);
 }
 
 .head{
     text-align: center;
     line-height: 0.5;
-    background-color: var(--background-300);
     padding: 20px;
 
     width: 80%;
@@ -118,7 +116,8 @@ main{
 }
 
 .form-row input[type="text"],
-.form-row input[type="password"]{
+.form-row input[type="password"],
+.form-row input[type="number"]{
     border:1px solid hsl(178, 62%, 33%);
     border-radius: 3px;
     padding: 7px;
@@ -139,8 +138,13 @@ main{
 .sub button{
     padding:10px 40px 10px 40px;
     font-size: 1.2rem;
-    border: 1px solid var(--background-800);
+    border: 1px solid hsl(120, 68%, 49%);
     border-radius: 7px;
     background-color: hsl(120, 68%, 39%);
     color: hsl(178, 79%, 100%);
+}
+
+.sub button:active{
+    background-color: hsl(120, 68%, 19%);
+
 }
